@@ -1,0 +1,19 @@
+#!python
+import argparse
+import os
+from pyfinder import file_finder, file_inspector
+
+parser = argparse.ArgumentParser(description='Look for files and text inside the files')
+parser.add_argument('-f', '--file', type=str, required=True, help='File name')
+parser.add_argument('-d', '--dir', default=os.curdir, help='Pop directory')
+parser.add_argument('-p', '--pattern', default='', help="Pattern to look for")
+parser.add_argument('-r', '--recursive', action='store_true', help='Recursively searching')
+args = parser.parse_args()
+
+for file in file_finder(args.file, args.dir, args.recursive):
+    if args.pattern:
+        for line in file_inspector(file, args.pattern):
+            print(file, line, sep=' -> ', end='')
+    else:
+        print(file)
+

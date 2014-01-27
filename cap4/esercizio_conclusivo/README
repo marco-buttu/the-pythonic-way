@@ -1,0 +1,40 @@
+
+===========================
+Intallare ed usare PyFinder
+===========================
+
+Introduzione
+============
+A brief description about the module
+
+
+Versioni Python supportate
+==========================
+For full details, see the installation section of the manual.  The basic parts
+of IPython only need the Python standard library, but much of its more advanced
+functionality requires extra packages.
+PyFinder requires Python version 3.3 and above.
+
+
+Installazione
+=============
+PyFinder is only released as a source distribution.
+
+It can be installed using pip, and can be done so with the source tarball,
+or by using the ``distribute_setup.py`` script provided online.
+
+Intalling by pip is the simplest and preferred way on all systems.
+
+    $ pip install pyfinder
+
+Ohterwhise download the source tarball, uncompress it, then run the install command::
+
+    $ curl -O http://pypi.python.org/packages/source/d/distribute/distribute-0.6.36.tar.gz
+    $ tar -xzvf distribute-0.6.36.tar.gz
+    $ cd distribute-0.6.36
+    $ python setup.py install
+
+
+Disinstallazione
+================
+Bla bla
