@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Errata corrige &#34;Programmare con Python. Guida completa&#34;</title>
+    
+    <link rel="stylesheet" href="_static/agogo.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="None" href="index.html" /> 
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header">
+        <div class="headertitle"><a
+          href="errata.html#document-errata">Errata corrige &#34;Programmare con Python. Guida completa&#34;</a></div>
+        <div class="rel">
+        </div>
+       </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content">
+        <div class="document">
+            
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="pagina-71">
+<h1>Pagina 71<a class="headerlink" href="#pagina-71" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="originale">
+<h2>Originale<a class="headerlink" href="#originale" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>mv foo foo.py <span class="c"># Rinominiamo il file aggiungendo `.py`. Ora possiamo importarlo</span>
+<span class="nv">$ </span>python -c <span class="s2">&quot;import foo&quot;</span>
+Ciao, quando è bello Python :<span class="o">)</span>
+</pre></div>
+</div>
+<p>C&#8217;e&#8217; un errore di digitazione: <tt class="docutils literal"><span class="pre">&quot;quando</span> <span class="pre">è</span> <span class="pre">bello&quot;</span></tt> piuttosto che <tt class="docutils literal"><span class="pre">&quot;quanto</span> <span class="pre">è</span> <span class="pre">bello&quot;</span></tt>.</p>
+</div>
+<div class="section" id="corretto">
+<h2>Corretto<a class="headerlink" href="#corretto" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>mv foo foo.py <span class="c"># Rinominiamo il file aggiungendo `.py`. Ora possiamo importarlo</span>
+<span class="nv">$ </span>python -c <span class="s2">&quot;import foo&quot;</span>
+Ciao, quanto è bello Python :<span class="o">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="pagina-148">
+<h1>Pagina 148<a class="headerlink" href="#pagina-148" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>Originale<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">any</span><span class="p">([])</span> <span class="c"># Restituisce True se l&#39;oggetto iterabile e&#39; vuoto</span>
+</pre></div>
+</div>
+<p>La funzione a cui si fa riferimento e&#8217; <tt class="docutils literal"><span class="pre">all()</span></tt> non <tt class="docutils literal"><span class="pre">any()</span></tt>. Inoltre manca il risultato.</p>
+</div>
+<div class="section" id="id2">
+<h2>Corretto<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">all</span><span class="p">([])</span> <span class="c"># Restituisce True se l&#39;oggetto iterabile e&#39; vuoto</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="pagina-151">
+<h1>Pagina 151<a class="headerlink" href="#pagina-151" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id3">
+<h2>Originale<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">sorted</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="s">&#39;python&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;quattro&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s">&#39;cinque&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s">&#39;sei&#39;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> <span class="s">&#39;otto&#39;</span><span class="p">:</span> <span class="mi">8</span><span class="p">}],</span>
+<span class="gp">... </span><span class="n">key</span><span class="o">=</span><span class="nb">len</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="go">[&#39;python&#39;, {&#39;cinque&#39;: 5, &#39;quattro&#39;: 4, &#39;otto&#39;: 8, &#39;sei&#39;: 6}, (1, 2, 3)]</span>
+<span class="go">[&#39;python&#39;, {&#39;sei&#39;: 6, &#39;cinque&#39;: 5, &#39;otto&#39;: 8, &#39;quattro&#39;: 4}, (1, 2, 3)]}}}</span>
+</pre></div>
+</div>
+<p>Sono stati riportati due output piuttosto che uno.</p>
+</div>
+<div class="section" id="id4">
+<h2>Corretto<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">sorted</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="s">&#39;python&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;quattro&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s">&#39;cinque&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s">&#39;sei&#39;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> <span class="s">&#39;otto&#39;</span><span class="p">:</span> <span class="mi">8</span><span class="p">}],</span>
+<span class="gp">... </span><span class="n">key</span><span class="o">=</span><span class="nb">len</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="go">[&#39;python&#39;, {&#39;sei&#39;: 6, &#39;cinque&#39;: 5, &#39;otto&#39;: 8, &#39;quattro&#39;: 4}, (1, 2, 3)]}}}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="sidebar">
+          <h3>Table Of Contents</h3>
+          <ul class="simple">
+</ul>
+
+          <h3 style="margin-top: 1.5em;">Search</h3>
+          <form class="search" action="search.html" method="get">
+            <input type="text" name="q" />
+            <input type="submit" value="Go" />
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+          </form>
+          <p class="searchtip" style="font-size: 90%">
+            Enter search terms or a module, class or function name.
+          </p>
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+
+    <div class="footer-wrapper">
+      <div class="footer">
+        <div class="left">
+        </div>
+
+        <div class="right">
+          
+    <div class="footer">
+        &copy; Copyright 2014, Marco Buttu.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+    </div>
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+
+  </body>
+</html>
