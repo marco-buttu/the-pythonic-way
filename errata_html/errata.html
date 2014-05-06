@@ -153,19 +153,38 @@ Ciao, quanto è bello Python :<span class="o">)</span>
 </div>
 </div>
 </div>
+<div class="section" id="pagina-200">
+<h1>Pagina 200<a class="headerlink" href="#pagina-200" title="Permalink to this headline">¶</a></h1>
+<p>Segnalato da <strong>Calogero Galipò</strong></p>
+<div class="section" id="id11">
+<h2>Originale<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<p>C&#8217;e&#8217; un errore di digitazione (<tt class="docutils literal"><span class="pre">'atgrs'</span></tt> piuttosto che <tt class="docutils literal"><span class="pre">'atbrs'</span></tt>):</p>
+<blockquote>
+<div>Come possiamo vedere, è stato prima eliminato il carattere s in quanto presente
+in <tt class="docutils literal"><span class="pre">'atgrs'</span></tt>. A questo punto da <tt class="docutils literal"><span class="pre">'tringa'</span></tt> viene rimosso il carattere
+iniziale <tt class="docutils literal"><span class="pre">t</span></tt>, poiché anch&#8217;esso è presente in <tt class="docutils literal"><span class="pre">'atbrs'</span></tt>.</div></blockquote>
+</div>
+<div class="section" id="id12">
+<h2>Corretto<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>Come possiamo vedere, è stato prima eliminato il carattere s in quanto presente
+in <tt class="docutils literal"><span class="pre">'atgrs'</span></tt>. A questo punto da <tt class="docutils literal"><span class="pre">'tringa'</span></tt> viene rimosso il carattere
+iniziale <tt class="docutils literal"><span class="pre">t</span></tt>, poiché anch&#8217;esso è presente in <tt class="docutils literal"><span class="pre">'atgrs'</span></tt>.</div></blockquote>
+</div>
+</div>
 <div class="section" id="pagina-218">
 <h1>Pagina 218<a class="headerlink" href="#pagina-218" title="Permalink to this headline">¶</a></h1>
 <p>Segnalato da <strong>Gollum1</strong></p>
-<div class="section" id="id11">
-<h2>Originale<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id13">
+<h2>Originale<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c"># Indice della prima occorrenza di 2</span>
 <span class="go">2</span>
 </pre></div>
 </div>
 <p>Errore nel commento: restituisce l&#8217;indice della prima occorrenza di 3, non di 2.</p>
 </div>
-<div class="section" id="id12">
-<h2>Corretto<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id14">
+<h2>Corretto<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c"># Indice della prima occorrenza di 3</span>
 <span class="go">2</span>
 </pre></div>
@@ -175,8 +194,8 @@ Ciao, quanto è bello Python :<span class="o">)</span>
 <div class="section" id="pagina-228">
 <h1>Pagina 228<a class="headerlink" href="#pagina-228" title="Permalink to this headline">¶</a></h1>
 <p>Segnalato da <strong>Gollum1</strong></p>
-<div class="section" id="id13">
-<h2>Originale<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id15">
+<h2>Originale<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python argpar11.py
 usage: argpar11.py <span class="o">[</span>-h<span class="o">]</span> -f FILE -i INDEX
 argpar11.py: error: the following arguments are required: -f/--file, -i/--index
@@ -184,8 +203,8 @@ argpar11.py: error: the following arguments are required: -f/--file, -i/--index
 </div>
 <p>Errore: lo switch <tt class="docutils literal"><span class="pre">index</span></tt> non e&#8217; obbligatorio.</p>
 </div>
-<div class="section" id="id14">
-<h2>Corretto<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id16">
+<h2>Corretto<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python argpar11.py
 usage: argpar11.py <span class="o">[</span>-h<span class="o">]</span> -f FILE <span class="o">[</span>-i INDEX<span class="o">]</span>
 argpar11.py: error: the following arguments are required: -f/--file
