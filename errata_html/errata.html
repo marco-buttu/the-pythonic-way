@@ -68,18 +68,63 @@
 </div>
 </div>
 </div>
+<div class="section" id="pagina-58">
+<h1>Pagina 58<a class="headerlink" href="#pagina-58" title="Permalink to this headline">¶</a></h1>
+<p>Segnalato da <strong>Elise Egron</strong></p>
+<div class="section" id="id1">
+<h2>Originale<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">dir</span><span class="p">(</span><span class="n">builtins</span><span class="p">)</span>
+<span class="go">[&#39;ArithmeticError&#39;, &#39;AssertionError&#39;, &#39;AttributeError&#39;, &#39;BaseException&#39;, ...</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>Corretto<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Il modulo builtins deve essere importato:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">builtins</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">dir</span><span class="p">(</span><span class="n">builtins</span><span class="p">)</span>
+<span class="go">[&#39;ArithmeticError&#39;, &#39;AssertionError&#39;, &#39;AttributeError&#39;, &#39;BaseException&#39;, ...</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="pagina-62">
+<h1>Pagina 62<a class="headerlink" href="#pagina-62" title="Permalink to this headline">¶</a></h1>
+<p>Segnalato da <strong>Elise Egron</strong></p>
+<div class="section" id="id3">
+<h2>Originale<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Restringiamo il campo dicendo che le espressioni si trovano alla destra del
+simbolo di uguale e sono confinate all&#8217;interno delle linee logiche.</p>
+</div>
+<div class="section" id="id4">
+<h2>Corretto<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Questa frase oltre a trovarsi nel posto sbagliato (forse a causa di un
+copia/incolla o di una errata revisione finale del libro) è anche errata.
+Di seguito il testo così come dovrebbe essere:</p>
+<p><em>Consideriamo, a tale scopo, del codice che viene correttamente eseguito,
+come il seguente</em>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="s">&#39;p&#39;</span> <span class="ow">in</span> <span class="s">&#39;python&#39;</span><span class="p">:</span>
+<span class="gp">... </span><span class="k">print</span><span class="p">(</span><span class="s">&#39;python&#39;</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="go">python</span>
+</pre></div>
+</div>
+<p><em>Per scoprire se una porzione di codice è una espressione, possiamo estrapolarla
+dalla linea logica e assegnarla a una etichetta.</em></p>
+</div>
+</div>
 <div class="section" id="pagina-64">
 <h1>Pagina 64<a class="headerlink" href="#pagina-64" title="Permalink to this headline">¶</a></h1>
 <p>Segnalato da <strong>Gabriele Battaglia</strong></p>
-<div class="section" id="id1">
-<h2>Originale<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h2>Originale<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p>C&#8217;e&#8217; un refuso nella frase:</p>
 <p><tt class="docutils literal"><span class="pre">Le</span> <span class="pre">istruzioni</span> <span class="pre">hanno</span> <span class="pre">un</span> <span class="pre">nome,</span> <span class="pre">che</span> <span class="pre">deriva</span> <span class="pre">da</span> <span class="pre">quello</span> <span class="pre">dalle</span> <span class="pre">parole</span> <span class="pre">chiave</span>
 <span class="pre">utilizzate</span> <span class="pre">al</span> <span class="pre">loro</span> <span class="pre">interno.</span></tt></p>
 <p>E&#8217; stato scritto <tt class="docutils literal"><span class="pre">dalle</span> <span class="pre">parole</span> <span class="pre">chiave</span></tt> piuttosto che <tt class="docutils literal"><span class="pre">delle</span> <span class="pre">parole</span> <span class="pre">chiave</span></tt>.</p>
 </div>
-<div class="section" id="id2">
-<h2>Corretto<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id6">
+<h2>Corretto<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <p><tt class="docutils literal"><span class="pre">Le</span> <span class="pre">istruzioni</span> <span class="pre">hanno</span> <span class="pre">un</span> <span class="pre">nome,</span> <span class="pre">che</span> <span class="pre">deriva</span> <span class="pre">da</span> <span class="pre">quello</span> <span class="pre">delle</span> <span class="pre">parole</span> <span class="pre">chiave</span>
 <span class="pre">utilizzate</span> <span class="pre">al</span> <span class="pre">loro</span> <span class="pre">interno.</span></tt></p>
 </div>
@@ -87,8 +132,8 @@
 <div class="section" id="pagina-71">
 <h1>Pagina 71<a class="headerlink" href="#pagina-71" title="Permalink to this headline">¶</a></h1>
 <p>Segnalato da <strong>Calogero Galipò</strong></p>
-<div class="section" id="id3">
-<h2>Originale<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id7">
+<h2>Originale<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>mv foo foo.py <span class="c"># Rinominiamo il file aggiungendo `.py`. Ora possiamo importarlo</span>
 <span class="nv">$ </span>python -c <span class="s2">&quot;import foo&quot;</span>
 Ciao, quando è bello Python :<span class="o">)</span>
@@ -96,8 +141,8 @@ Ciao, quando è bello Python :<span class="o">)</span>
 </div>
 <p>C&#8217;e&#8217; un errore di digitazione: <tt class="docutils literal"><span class="pre">&quot;quando</span> <span class="pre">è</span> <span class="pre">bello&quot;</span></tt> piuttosto che <tt class="docutils literal"><span class="pre">&quot;quanto</span> <span class="pre">è</span> <span class="pre">bello&quot;</span></tt>.</p>
 </div>
-<div class="section" id="id4">
-<h2>Corretto<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id8">
+<h2>Corretto<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>mv foo foo.py <span class="c"># Rinominiamo il file aggiungendo `.py`. Ora possiamo importarlo</span>
 <span class="nv">$ </span>python -c <span class="s2">&quot;import foo&quot;</span>
 Ciao, quanto è bello Python :<span class="o">)</span>
@@ -105,11 +150,28 @@ Ciao, quanto è bello Python :<span class="o">)</span>
 </div>
 </div>
 </div>
+<div class="section" id="pagina-72">
+<h1>Pagina 72<a class="headerlink" href="#pagina-72" title="Permalink to this headline">¶</a></h1>
+<p>Segnalato da <strong>Elise Egron</strong></p>
+<div class="section" id="id9">
+<h2>Originale<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>Quando un programma viene mandato in esecuzione, Python compila
+tutti i moduli importati che <strong>non</strong> hanno subito modifiche dall’ultima volta in cui sono
+stati compilati.</p>
+<p>In questa frase c&#8217;è un refuso: il <strong>non</strong> è di troppo.</p>
+</div>
+<div class="section" id="id10">
+<h2>Corretto<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p>Quando un programma viene mandato in esecuzione, Python compila
+tutti i moduli importati <strong>che hanno</strong> subito modifiche dall’ultima volta in cui sono
+stati compilati.</p>
+</div>
+</div>
 <div class="section" id="pagina-124">
 <h1>Pagina 124<a class="headerlink" href="#pagina-124" title="Permalink to this headline">¶</a></h1>
 <p>Segnalato da <strong>Marco Podda</strong></p>
-<div class="section" id="id5">
-<h2>Originale<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id11">
+<h2>Originale<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
 <p>C&#8217;e&#8217; un errore di digitazione alla 11-esima riga, dove e&#8217; scritto che il valore
 da assegnare al codice 011 e&#8217; -3, mentre invece e&#8217; al codice 111
 che corrisponde il valore -3. Frase originale:</p>
@@ -117,8 +179,8 @@ che corrisponde il valore -3. Frase originale:</p>
 <span class="pre">codice</span> <span class="pre">100</span> <span class="pre">il</span> <span class="pre">valore</span> <span class="pre">decimale</span> <span class="pre">0,</span> <span class="pre">al</span> <span class="pre">codice</span> <span class="pre">101</span> <span class="pre">il</span> <span class="pre">valore</span> <span class="pre">-1,</span> <span class="pre">al</span> <span class="pre">codice</span> <span class="pre">110</span>
 <span class="pre">il</span> <span class="pre">valore</span> <span class="pre">-2</span> <span class="pre">e</span> <span class="pre">al</span> <span class="pre">codice</span> <span class="pre">011</span> <span class="pre">il</span> <span class="pre">valore</span> <span class="pre">-3.</span></tt></p>
 </div>
-<div class="section" id="id6">
-<h2>Corretto<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id12">
+<h2>Corretto<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
 <p><tt class="docutils literal"><span class="pre">La</span> <span class="pre">piu'</span> <span class="pre">semplice</span> <span class="pre">codifica</span> <span class="pre">dei</span> <span class="pre">numeri</span> <span class="pre">negativi</span> <span class="pre">consiste</span> <span class="pre">nell'assegnare</span> <span class="pre">al</span>
 <span class="pre">codice</span> <span class="pre">100</span> <span class="pre">il</span> <span class="pre">valore</span> <span class="pre">decimale</span> <span class="pre">0,</span> <span class="pre">al</span> <span class="pre">codice</span> <span class="pre">101</span> <span class="pre">il</span> <span class="pre">valore</span> <span class="pre">-1,</span> <span class="pre">al</span> <span class="pre">codice</span> <span class="pre">110</span>
 <span class="pre">il</span> <span class="pre">valore</span> <span class="pre">-2</span> <span class="pre">e</span> <span class="pre">al</span> <span class="pre">codice</span> <span class="pre">111</span> <span class="pre">il</span> <span class="pre">valore</span> <span class="pre">-3.</span></tt></p>
@@ -127,44 +189,44 @@ che corrisponde il valore -3. Frase originale:</p>
 <div class="section" id="pagina-132">
 <h1>Pagina 132<a class="headerlink" href="#pagina-132" title="Permalink to this headline">¶</a></h1>
 <p>Segnalato da <strong>Calogero Galipò</strong></p>
-<div class="section" id="id7">
-<h2>Originale<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id13">
+<h2>Originale<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
 <p>C&#8217;e&#8217; un errore di digitazione nel testo dell&#8217;immagine 2.5.  Al
 50-esimo bit e&#8217; stato assegnato l&#8217;indice 51 piuttosto che l&#8217;indice 50:</p>
 <a class="reference internal image-reference" href="_images/2.5_originale.jpg"><img alt="Figura 2.5: indice 51 ripetuto erroneamente 2 volte" class="align-center" src="_images/2.5_originale.jpg" style="width: 798.7px; height: 207.9px;" /></a>
 </div>
-<div class="section" id="id8">
-<h2>Corretto<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id14">
+<h2>Corretto<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="_images/2.5.jpg"><img alt="Figura 2.5 corretta" class="align-center" src="_images/2.5.jpg" style="width: 798.7px; height: 207.9px;" /></a>
 </div>
 </div>
 <div class="section" id="pagina-135">
 <h1>Pagina 135<a class="headerlink" href="#pagina-135" title="Permalink to this headline">¶</a></h1>
 <p>Segnalato da <strong>Calogero Galipò</strong></p>
-<div class="section" id="id9">
-<h2>Originale<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id15">
+<h2>Originale<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
 <p>C&#8217;e&#8217; un errore di digitazione sia nell&#8217;immagine 2.8 sia nell&#8217;immagine 2.9.  Al
 50-esimo bit e&#8217; stato assegnato l&#8217;indice 51 piuttosto che l&#8217;indice 50:</p>
 <a class="reference internal image-reference" href="_images/2.9_originale.jpg"><img alt="Figura 2.9: indice 51 ripetuto erroneamente 2 volte" class="align-center" src="_images/2.9_originale.jpg" style="width: 702.1px; height: 214.2px;" /></a>
 <p>L&#8217;errore nell&#8217;immagine 2.8 e&#8217; analogo a quello dell&#8217;immagine 2.9.</p>
 </div>
-<div class="section" id="id10">
-<h2>Corretto<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id16">
+<h2>Corretto<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="_images/2.9.jpg"><img alt="Figura 2.9 corretta" class="align-center" src="_images/2.9.jpg" style="width: 702.1px; height: 214.2px;" /></a>
 </div>
 </div>
 <div class="section" id="pagina-148">
 <h1>Pagina 148<a class="headerlink" href="#pagina-148" title="Permalink to this headline">¶</a></h1>
 <p>Segnalato da <strong>Gollum1</strong></p>
-<div class="section" id="id11">
-<h2>Originale<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id17">
+<h2>Originale<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">any</span><span class="p">([])</span> <span class="c"># Restituisce True se l&#39;oggetto iterabile e&#39; vuoto</span>
 </pre></div>
 </div>
 <p>La funzione a cui si fa riferimento e&#8217; <tt class="docutils literal"><span class="pre">all()</span></tt> non <tt class="docutils literal"><span class="pre">any()</span></tt>. Inoltre manca il risultato.</p>
 </div>
-<div class="section" id="id12">
-<h2>Corretto<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id18">
+<h2>Corretto<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">all</span><span class="p">([])</span> <span class="c"># Restituisce True se l&#39;oggetto iterabile e&#39; vuoto</span>
 <span class="go">True</span>
 </pre></div>
@@ -174,8 +236,8 @@ che corrisponde il valore -3. Frase originale:</p>
 <div class="section" id="pagina-151">
 <h1>Pagina 151<a class="headerlink" href="#pagina-151" title="Permalink to this headline">¶</a></h1>
 <p>Segnalato da <strong>Gollum1</strong></p>
-<div class="section" id="id13">
-<h2>Originale<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id19">
+<h2>Originale<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">sorted</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="s">&#39;python&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;quattro&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s">&#39;cinque&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s">&#39;sei&#39;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> <span class="s">&#39;otto&#39;</span><span class="p">:</span> <span class="mi">8</span><span class="p">}],</span>
 <span class="gp">... </span><span class="n">key</span><span class="o">=</span><span class="nb">len</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <span class="go">[&#39;python&#39;, {&#39;cinque&#39;: 5, &#39;quattro&#39;: 4, &#39;otto&#39;: 8, &#39;sei&#39;: 6}, (1, 2, 3)]</span>
@@ -184,8 +246,8 @@ che corrisponde il valore -3. Frase originale:</p>
 </div>
 <p>Sono stati riportati due output piuttosto che uno.</p>
 </div>
-<div class="section" id="id14">
-<h2>Corretto<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id20">
+<h2>Corretto<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">sorted</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="s">&#39;python&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;quattro&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s">&#39;cinque&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s">&#39;sei&#39;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> <span class="s">&#39;otto&#39;</span><span class="p">:</span> <span class="mi">8</span><span class="p">}],</span>
 <span class="gp">... </span><span class="n">key</span><span class="o">=</span><span class="nb">len</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <span class="go">[&#39;python&#39;, {&#39;sei&#39;: 6, &#39;cinque&#39;: 5, &#39;otto&#39;: 8, &#39;quattro&#39;: 4}, (1, 2, 3)]}}}</span>
@@ -196,15 +258,15 @@ che corrisponde il valore -3. Frase originale:</p>
 <div class="section" id="pagina-173">
 <h1>Pagina 173<a class="headerlink" href="#pagina-173" title="Permalink to this headline">¶</a></h1>
 <p>Segnalato da <strong>Gollum1</strong></p>
-<div class="section" id="id15">
-<h2>Originale<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id21">
+<h2>Originale<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="c"># Dal primo elemento sino all&#39;ultimo (incluso)</span>
 </pre></div>
 </div>
 <p>Non dal primo elemento, ma dal secondo (quello con indice 1)</p>
 </div>
-<div class="section" id="id16">
-<h2>Corretto<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id22">
+<h2>Corretto<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="c"># Dall&#39;elemento di indice 1 sino all&#39;ultimo (incluso)</span>
 </pre></div>
 </div>
@@ -213,16 +275,16 @@ che corrisponde il valore -3. Frase originale:</p>
 <div class="section" id="pagina-200">
 <h1>Pagina 200<a class="headerlink" href="#pagina-200" title="Permalink to this headline">¶</a></h1>
 <p>Segnalato da <strong>Calogero Galipò</strong></p>
-<div class="section" id="id17">
-<h2>Originale<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id23">
+<h2>Originale<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
 <p>C&#8217;e&#8217; un errore di digitazione (<tt class="docutils literal"><span class="pre">'atgrs'</span></tt> piuttosto che <tt class="docutils literal"><span class="pre">'atbrs'</span></tt>):</p>
 <blockquote>
 <div>Come possiamo vedere, è stato prima eliminato il carattere s in quanto presente
 in <tt class="docutils literal"><span class="pre">'atgrs'</span></tt>. A questo punto da <tt class="docutils literal"><span class="pre">'tringa'</span></tt> viene rimosso il carattere
 iniziale <tt class="docutils literal"><span class="pre">t</span></tt>, poiché anch&#8217;esso è presente in <tt class="docutils literal"><span class="pre">'atbrs'</span></tt>.</div></blockquote>
 </div>
-<div class="section" id="id18">
-<h2>Corretto<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id24">
+<h2>Corretto<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div>Come possiamo vedere, è stato prima eliminato il carattere s in quanto presente
 in <tt class="docutils literal"><span class="pre">'atgrs'</span></tt>. A questo punto da <tt class="docutils literal"><span class="pre">'tringa'</span></tt> viene rimosso il carattere
@@ -232,16 +294,16 @@ iniziale <tt class="docutils literal"><span class="pre">t</span></tt>, poiché a
 <div class="section" id="pagina-218">
 <h1>Pagina 218<a class="headerlink" href="#pagina-218" title="Permalink to this headline">¶</a></h1>
 <p>Segnalato da <strong>Gollum1</strong></p>
-<div class="section" id="id19">
-<h2>Originale<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id25">
+<h2>Originale<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c"># Indice della prima occorrenza di 2</span>
 <span class="go">2</span>
 </pre></div>
 </div>
 <p>Errore nel commento: restituisce l&#8217;indice della prima occorrenza di 3, non di 2.</p>
 </div>
-<div class="section" id="id20">
-<h2>Corretto<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id26">
+<h2>Corretto<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c"># Indice della prima occorrenza di 3</span>
 <span class="go">2</span>
 </pre></div>
@@ -251,14 +313,14 @@ iniziale <tt class="docutils literal"><span class="pre">t</span></tt>, poiché a
 <div class="section" id="pagina-224">
 <h1>Pagina 224<a class="headerlink" href="#pagina-224" title="Permalink to this headline">¶</a></h1>
 <p>Segnalato da <strong>Cosimo Damiano Prete</strong></p>
-<div class="section" id="id21">
-<h2>Originale<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id27">
+<h2>Originale<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h2>
 <p>Potremmo risolvere il problema con
 <tt class="docutils literal"><span class="pre">print(int(lines[args.index]))</span></tt>, ma esiste una soluzione migliore.
 C&#8217;è un refuso, perché è <tt class="docutils literal"><span class="pre">args.index</span></tt> che deve essere convertito in intero.</p>
 </div>
-<div class="section" id="id22">
-<h2>Corretto<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id28">
+<h2>Corretto<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h2>
 <p>Potremmo risolvere il problema con
 <tt class="docutils literal"><span class="pre">print(lines[int(args.index)])</span></tt>, ma esiste una soluzione migliore.</p>
 </div>
@@ -266,8 +328,8 @@ C&#8217;è un refuso, perché è <tt class="docutils literal"><span class="pre">
 <div class="section" id="pagina-228">
 <h1>Pagina 228<a class="headerlink" href="#pagina-228" title="Permalink to this headline">¶</a></h1>
 <p>Segnalato da <strong>Gollum1</strong></p>
-<div class="section" id="id23">
-<h2>Originale<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id29">
+<h2>Originale<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python argpar11.py
 usage: argpar11.py <span class="o">[</span>-h<span class="o">]</span> -f FILE -i INDEX
 argpar11.py: error: the following arguments are required: -f/--file, -i/--index
@@ -275,8 +337,8 @@ argpar11.py: error: the following arguments are required: -f/--file, -i/--index
 </div>
 <p>Errore: lo switch <tt class="docutils literal"><span class="pre">index</span></tt> non e&#8217; obbligatorio.</p>
 </div>
-<div class="section" id="id24">
-<h2>Corretto<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id30">
+<h2>Corretto<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python argpar11.py
 usage: argpar11.py <span class="o">[</span>-h<span class="o">]</span> -f FILE <span class="o">[</span>-i INDEX<span class="o">]</span>
 argpar11.py: error: the following arguments are required: -f/--file
@@ -287,8 +349,8 @@ argpar11.py: error: the following arguments are required: -f/--file
 <div class="section" id="pagina-423">
 <h1>Pagina 423<a class="headerlink" href="#pagina-423" title="Permalink to this headline">¶</a></h1>
 <p>Segnalato da <strong>Davide Bragato</strong></p>
-<div class="section" id="id25">
-<h2>Originale<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id31">
+<h2>Originale<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h2>
 <p>Per fare ciò dobbiamo definire <tt class="docutils literal"><span class="pre">PlaneShape</span></tt> nel seguente modo:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">PlaneShape</span><span class="p">(</span><span class="n">metaclass</span><span class="o">=</span><span class="n">ABCMeta</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="sd">&quot;&quot;&quot;Figura geometrica piana&quot;&quot;&quot;</span>
@@ -296,8 +358,8 @@ argpar11.py: error: the following arguments are required: -f/--file
 </pre></div>
 </div>
 </div>
-<div class="section" id="id26">
-<h2>Corretto<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id32">
+<h2>Corretto<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h2>
 <p>Per fare ciò dobbiamo definire <tt class="docutils literal"><span class="pre">PlaneShape</span></tt> nel seguente modo:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">abc</span> <span class="kn">import</span> <span class="n">ABCMeta</span><span class="p">,</span> <span class="n">abstractmethod</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">PlaneShape</span><span class="p">(</span><span class="n">metaclass</span><span class="o">=</span><span class="n">ABCMeta</span><span class="p">):</span>
@@ -310,15 +372,15 @@ argpar11.py: error: the following arguments are required: -f/--file
 <div class="section" id="pagina-424">
 <h1>Pagina 424<a class="headerlink" href="#pagina-424" title="Permalink to this headline">¶</a></h1>
 <p>Segnalato da <strong>Alessandro Ridolfi</strong></p>
-<div class="section" id="id27">
-<h2>Originale<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id33">
+<h2>Originale<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h2>
 <p>Per due volte ad inizio pagina e&#8217; stato scritto:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">metodo</span> <span class="o">=</span> abstractmethod<span class="o">(</span>methodo<span class="o">)</span>.
 </pre></div>
 </div>
 </div>
-<div class="section" id="id28">
-<h2>Corretto<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id34">
+<h2>Corretto<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">metodo</span> <span class="o">=</span> abstractmethod<span class="o">(</span>metodo<span class="o">)</span>.
 </pre></div>
 </div>
@@ -327,8 +389,8 @@ argpar11.py: error: the following arguments are required: -f/--file
 <div class="section" id="pagina-426">
 <h1>Pagina 426<a class="headerlink" href="#pagina-426" title="Permalink to this headline">¶</a></h1>
 <p>Segnalato da <strong>Alessandro Ridolfi</strong></p>
-<div class="section" id="id29">
-<h2>Originale<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id35">
+<h2>Originale<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">PlaneShape</span><span class="p">(</span><span class="n">metaclass</span><span class="o">=</span><span class="n">ABCMeta</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="gp">... </span>        <span class="k">pass</span>
@@ -343,8 +405,8 @@ argpar11.py: error: the following arguments are required: -f/--file
 </pre></div>
 </div>
 </div>
-<div class="section" id="id30">
-<h2>Corretto<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id36">
+<h2>Corretto<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">PlaneShape</span><span class="p">(</span><span class="n">metaclass</span><span class="o">=</span><span class="n">ABCMeta</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="gp">... </span>        <span class="k">pass</span>
@@ -363,12 +425,12 @@ argpar11.py: error: the following arguments are required: -f/--file
 <div class="section" id="pagina-448">
 <h1>Pagina 448<a class="headerlink" href="#pagina-448" title="Permalink to this headline">¶</a></h1>
 <p>Segnalato da <strong>Alessandro Ridolfi</strong></p>
-<div class="section" id="id31">
-<h2>Originale<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id37">
+<h2>Originale<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h2>
 <p>Cut-and-paste programming</p>
 </div>
-<div class="section" id="id32">
-<h2>Corretto<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id38">
+<h2>Corretto<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h2>
 <p>Copy-and-paste programming</p>
 </div>
 </div>
